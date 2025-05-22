@@ -8,7 +8,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "vue-tsc": "vue-tsc",
+    "dev": "vite"
   },
   "keywords": [
     "ele-plus-package"

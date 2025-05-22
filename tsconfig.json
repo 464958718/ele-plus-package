@@ -26,7 +26,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    // 必须启用 declaration 才能使用 emitDeclarationOnly
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist/types"
   },
   "include": [
     "src/**/*.ts",
@@ -35,5 +39,6 @@
     "src/**/*.vue",
     "vite.config.ts"
   ],
+  "exclude": ["node_modules", "dist", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
