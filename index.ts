@@ -1,10 +1,12 @@
-import Button from './src/Button.vue'
-import { App } from 'vue'
+import EleForm from "./src/Form/index.vue"
+import EleTable from "./src/Table/index.vue"
+import { App } from "vue"
 
 export default {
     install(app: App) {
-        app.component('Button', Button)
-    }
+        app.component("EleForm", EleForm)
+        app.component("EleTable", EleTable)
+    },
 }
 
-export { Button }
+export { EleForm, EleTable }
