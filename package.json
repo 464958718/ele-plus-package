@@ -10,7 +10,9 @@
   "scripts": {
     "build": "vite build",
     "vue-tsc": "vue-tsc",
-    "dev": "vite"
+    "dev": "vite",
+    "lint": "eslint . --ext .js,.ts,.vue",
+    "lint:fix": "eslint . --ext .js,.ts,.vue --fix"
   },
   "keywords": [
     "ele-plus-package"
@@ -20,11 +22,21 @@
   "description": "ele-plus-package",
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.1.2",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
     "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-vue": "^10.1.0",
+    "prettier": "^3.5.3",
     "tslib": "^2.8.1",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
     "vue": "^3.5.14",
     "vue-tsc": "^2.2.10"
+  },
+  "dependencies": {
+    "element-plus": "^2.9.11"
   }
 }
